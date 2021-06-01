@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/Citronex/cypress-framework/issues"
   },
-  "homepage": "https://github.com/Citronex/cypress-framework#readme"
+  "homepage": "https://github.com/Citronex/cypress-framework#readme",
+  "dependencies": {
+    "cypress": "^7.4.0",
+    "cypress-image-snapshot": "^4.0.1"
+  }
 }
