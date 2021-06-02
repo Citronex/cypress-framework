@@ -22,6 +22,7 @@
   "homepage": "https://github.com/Citronex/cypress-framework#readme",
   "dependencies": {
     "cypress": "^7.4.0",
-    "cypress-image-snapshot": "^4.0.1"
+    "cypress-image-snapshot": "^4.0.1",
+    "prettier": "^2.3.0"
   }
 }
