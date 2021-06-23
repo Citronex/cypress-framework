@@ -6,6 +6,7 @@
   "scripts": {
     "cy:open": "cypress open",
     "cy:run": "cypress run",
+    "cy:update-dashboard": "cypress run --record --key 271bfc37-8309-4f6f-aad4-4054d12838d0",
     "cy:update-snapshots": "cypress run --env updateSnapshots=true"
   },
   "repository": {
@@ -26,5 +27,8 @@
     "cypress": "^7.5.0",
     "cypress-image-snapshot": "^4.0.1",
     "prettier": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/cypress-image-snapshot": "^3.1.5"
   }
 }
