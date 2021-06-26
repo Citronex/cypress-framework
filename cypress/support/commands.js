@@ -24,10 +24,9 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-import { addMatchImageSnapshotPlugin } from 'cypress-image-snapshot/command'
-import { size } from 'cypress/types/lodash'
+import { addMatchImageSnapshotCommand } from 'cypress-image-snapshot/command'
 
-addMatchImageSnapshotPlugin()
+addMatchImageSnapshotCommand()
 
 Cypress.Commands.add('isVisible', selector => {
     cy.get(selector).should('be.visible')

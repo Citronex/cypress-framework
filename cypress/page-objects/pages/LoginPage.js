@@ -1,3 +1,4 @@
+import BasePage from "../BasePage"
 export default class LoginPage extends BasePage {
     static login(username, passowrd) {
         cy.login(username, passowrd)
