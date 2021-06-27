@@ -7,7 +7,6 @@ describe('Login Failed Test', () => {
         cy.visit(url)
         Navbar.clickSignInButton()
     })
-
     it('should try to login with invalid credentials', () => {
         LoginPage
             .login('invalid username', 'invalid password')
@@ -27,5 +26,14 @@ describe('Login Success Test', () => {
     it('Should login into application', () => {
         LoginPage
             .login(login_username, login_password)
+    })
+
+    it('Should logout from application', () => {
+        Navbar
+            .clickLogout()
+        cy.url().should('eq', url)
+        
+        Navbar
+            .displaySigninButton()
     })
 })
