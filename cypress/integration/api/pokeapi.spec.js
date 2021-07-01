@@ -1,5 +1,5 @@
 /// <reference types="Cypress" />
-import { pokeapi_base_url } from '../../../../config'
+import { pokeapi_base_url } from '../../../config'
 
 describe('Rest API Test with Cypress', () =>  {
     it('API Test - Validate Header', () => {
