@@ -13,17 +13,17 @@ describe('Rest API Test with Cypress', () =>  {
 
     it('API Test - Validate Status Code', () => {
         cy.request(`${pokeapi_base_url}v2/pokemon/25`)
-        .as('pokemon')
+            .as('pokemon')
         cy.get('@pokemon')
-        .its('status')
-        .should('equal', 200)
+            .its('status')
+            .should('equal', 200)
     })
 
     it('API  Test  - Validate Name Value', () => {
         cy.request(`${pokeapi_base_url}v2/pokemon/25`).as('pokemon')
         cy.get('@pokemon')
-        .its('body')
-        .should('include', { name: 'pikachu' })
+            .its('body')
+            .should('include', { name: 'pikachu' })
     })
 
     it('API Test - Validate Negative Status Code', () => {
@@ -33,8 +33,8 @@ describe('Rest API Test with Cypress', () =>  {
             failOnStatusCode: false
         }).as('pokemon')
         cy.get('@pokemon')
-        .its('status')
-        .should('equal', 404)
+            .its('status')
+            .should('equal', 404)
 
     })
 })

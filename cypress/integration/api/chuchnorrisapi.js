@@ -5,7 +5,7 @@ beforeEach(() => {
 	cy.log('starting test')
 })
 
-describe('REST API Tests for api.chuchnorris.io', () => {
+describe('REST API Tests for api.chucknorris.io', () => {
 	it('API Test - Validate Status Code', () => {
 		cy.request(`${chucknorrisapi_base_url}jokes/random`).as('joke')
 		cy.get('@joke').its('status').should('equal', 200)
